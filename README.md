@@ -7,6 +7,7 @@ usage: scopy source [destination] [options]...
     destination         destination file or directory
 
 options:
+
     -e <regex>          exclude filter
     -i <regex>          include filter
     -t                  tolerant, continue when error ocurrs
