@@ -20,4 +20,5 @@ note: If source is a file and destination dosn't exist, if destination end with 
 example: scopy dir1 dir2 -e regex1 -i regex2 -e regex3 ...
 
 # build
-C++17 compiler needed
+Windows exe and Visual C++ 2017 project file provided.
+Other platform with C++17 compiler may supported, just didn't test it.
