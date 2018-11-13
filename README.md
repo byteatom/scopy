@@ -1,3 +1,4 @@
+R"(
 # scopy
 Copy files or directories filtered with multi exclude or include regular expression pattern
 
@@ -38,3 +39,4 @@ since there is only one .cpp file with 100+ lines of code in it and dosn't use a
 libaray or system API except standard C++17 feature.
 
 https://github.com/byteatom/scopy
+)"
