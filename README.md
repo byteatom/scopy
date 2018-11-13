@@ -26,7 +26,7 @@ source should be in front of destination.
     2. If source is a file, append a \ or / to destination will make scopy
        consider it's a directory, otherwise a file.
 3. Patterns is apply to every file path in the source path, absolutely or
-relatively as given. Default patter is include all files. For every file if
+relatively as given. Default pattern is include all files. For every file if
 none exclude pattern matched, then it's included, else continue check if any
 include pattern matched, then it's included, else it's excluded. In other words
 include filter has high priority than exclude filter.
