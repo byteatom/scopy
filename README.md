@@ -1,7 +1,8 @@
 # scopy
 Copy files or directories filtered with multi exclude or include regular expression pattern
 
-**usage: scopy source [destination] [options]...**
+### Usage
+scopy source [destination] [options]...
 
     source              source file or directory, must exist
     destination         destination file or directory, see note
