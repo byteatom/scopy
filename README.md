@@ -19,8 +19,8 @@ options:
 1. The order of source, destination and options make no sense except that source should be in
 front of destination.
 2. If destination dosn't exist:
-    1. If Source is a directory, destination is always treated as a  directory
-    2. If Source is a file, append a '\' or '/' to destination will make scopy consider it's a
+    1. If source is a directory, destination is always treated as a  directory
+    2. If source is a file, append a "'\'" or '/' to destination will make scopy consider it's a
        directory, otherwise a file.
 3. Patterns is apply to every file path in the source path, absolutely or relatively as given.
 Default patter is include all files. For every file if none exclude pattern matched, then it's
