@@ -3,14 +3,14 @@ Copy files or directories filtered with multi exclude or include regular express
 
 usage: scopy source [destination] [options]...
 
-    source              source file or directory
-    destination         destination file or directory
+    source              source file or directory, must exist
+    destination         destination file or directory, see note
 
 options:
 
     -h                  help
-    -e <regex>          exclude filter
-    -i <regex>          include filter
+    -e <regex>          exclude filter, see note
+    -i <regex>          include filter, see note
     -t                  tolerant, continue when error ocurrs
     -u                  update, overwrite only if file modification time or size is different
     -v                  verbose
@@ -18,9 +18,12 @@ options:
 ### Note
 1. The order of source, destination and options make no sense except that source should be in
 front of destination.
-2. If source is a file and destination dosn't exist, if destination end with '\' or '/' means
-it's a directory, otherwise it's a file.
-3. Default is include all files. For every file if none exclude pattern matched, then it's 
+2. If destination dosn't exist:
+    a. If Source is a directory, destination is always treated as a  directory
+    b. If Source is a file, append a '\' or '/' to destination will make scopy consider it's a
+       directory, otherwise a file.
+3. Pattern is apply to every file path in the source path, absolutely or relatively as given.
+Default patter is include all files. For every file if none exclude pattern matched, then it's
 included, else continue check if any include pattern matched, then it's included, else it's 
 excluded. In other works include filter has high priority than exclude filter.
 
